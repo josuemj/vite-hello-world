@@ -1,0 +1,28 @@
+@keyframes moveStretchRotateAndDown {
+    0% {
+      transform: translateX(100) scaleX(1) rotate(0deg) translateY(0);
+    }
+    25% {
+      transform: translateX(100px) scaleX(2) rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: translateX(100px) scaleX(2) rotate(90deg) translateY(50px);
+    }
+    75% {
+      transform: translateX(200) scaleX(1) rotate(45deg) translateY(50px);
+    }
+    100% {
+      transform: translateX(0) scaleX(1) rotate(0deg) translateY(0);
+    }
+  }
+  
+  div {
+      height: 300px;
+      width: 500px;
+      background-color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: moveStretchRotateAndDown 4s infinite ease-in-out;
+  }
+
